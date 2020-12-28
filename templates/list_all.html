@@ -1,0 +1,39 @@
+{% extends 'template.html' %}
+{% block body %}
+
+<h1>List all</h1>
+
+
+<ul>
+    
+    {% for obj in marketplaces %}
+    <b>marketplace:</b>
+    <br>
+        <li>    
+            {{ obj['name'] }}
+            <ul>
+                <b>categories:</b>
+                <br>
+                {% for cat in obj['category'] %}
+                
+                    <li>{{ cat['name'] }}
+                        <ul>
+                            <b>subcategories:</b>
+                            <br>
+                            <li>
+                                {% for sub in cat['subcategories'] %}
+                                    {{ sub['name'] }}
+                                {% endfor %}
+                            </li>
+                        </ul>
+                    </li>
+
+                {% endfor %}
+            </ul>
+        </li>
+
+    {% endfor %}
+    
+</ul>
+<a href="/">Back</a>
+{% endblock %}

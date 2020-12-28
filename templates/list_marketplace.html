@@ -1,0 +1,14 @@
+{% extends 'template.html' %}
+{% block body %}
+
+<h1>Marketplaces registered</h1>
+<h3>marketplaces: </h3>
+<ul>
+
+    {% for obj in marketplaces %}
+        <li>{{ obj['name'] }}</li>
+    {% endfor %}
+    
+</ul>
+<a href="/">Back</a>
+{% endblock %}

@@ -1,0 +1,38 @@
+{% extends 'template.html' %}
+{% block body %}
+
+
+<h1> Menu </h1>
+<ul>
+    <li><a href="/listmarketplaces">List marketplaces</a></li>
+    <li><a href="/listcategories">List marketplaces and categories</a></li>
+    <li><a href="/listcategoriesandsubcategories">List categories and subcategories</a></li>
+    <li><a href="/listall">List all</a></li>
+</ul>
+
+
+
+
+
+<!-- <table>
+    <tr>
+        <th>Name</th>
+        <th>Categorie</th>
+        <th>Subcategories</th>
+    
+    {% for obj in marketplaces %}
+        <tr>
+            <td>{{ obj['name'] }}</td>
+
+            {% for cat in obj['category'] %}
+                <td>{{ cat['name'] }}</td>
+
+                {% for sub in cat['subcategories'] %}
+                    <td>{{ sub['name'] }}</td>
+                {% endfor %}
+            {% endfor %}
+        </tr>
+    {% endfor %}
+    
+</table> -->
+{% endblock %}

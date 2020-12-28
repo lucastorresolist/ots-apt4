@@ -1,0 +1,3 @@
+{"name": "magalu", "category": [{"name": "eletronico", "subcategories": [{"name":"celulares"}, {"name":"televisões"}]}]}
+{"name": "mercado livre", "category": [{"name": "quarto", "subcategories": [{"name":"armarios"}, {"name": "camas"}, {"name":"abajur"}]}]}
+{"name": "netshoes", "category": [{"name": "sapatos", "subcategories": []}, {"name": "chinelos", "subcategories": []}]}
