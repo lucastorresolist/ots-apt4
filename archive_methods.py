@@ -19,7 +19,6 @@ def read_archive() -> list:
     marketplaces : list = []
     archive = open(path, 'r')
     
-    
     for obj in archive:
         line_cleaned = obj.strip() #clear caracteres and clear white spaces (\n \t \r ' ')
         line_json = json.loads(line_cleaned)
