@@ -26,3 +26,9 @@ def read_archive() -> list:
 
     archive.close()
     return marketplaces
+
+def write_marketplace(marketplane_name: str):
+    archive = open(path, 'a')
+    dictionary = '{"name": "' + marketplane_name + '"}'
+    archive.write(f'{dictionary}\n')
+    archive.close()
